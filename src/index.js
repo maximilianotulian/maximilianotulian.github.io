@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
+import 'react-vertical-timeline-component/style.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { init } from '@rematch/core';
+import { Provider } from 'react-redux';
+import countModel from './models/model'
+
+const store = init({
+  models: {
+    countModel,
+  }
+})
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
