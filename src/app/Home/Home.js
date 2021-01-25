@@ -10,9 +10,11 @@ export default function Home(props) {
   return (
     <Layout>
       <div>
-        Maximiliano Tulian - Software Engineer
+        <h2>
+          Maximiliano Tulian - Software Engineer
+
+        </h2>
       </div>
-      <Separator />
       <section>
         Github Twitter Medium
       </section>

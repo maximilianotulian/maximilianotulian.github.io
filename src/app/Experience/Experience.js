@@ -13,37 +13,37 @@ const mockedData = [
     title: 'Software Engineer at Ergeon',
     subtitle: 'San Francisco',
     description: 'Working at the main page of Ergeon mainly in front end related task. Home page: www.ergeon.com.',
-    date: 'January to August 2020'
+    date: 'April to August 2020'
   },
   {
     title: 'Web UI Developer at Globant',
     subtitle: 'United States',
     description: 'Working for InStride.com in front-end related tasks',
-    date: 'January to August 2020'
+    date: 'March to April 2020'
   },
   {
     title: 'Web UI Developer at Globant',
     subtitle: 'Argentina',
     description: 'Learning and applying design patterns to build reusable components',
-    date: 'January to August 2020'
+    date: 'February to March 2020'
   },
   {
     title: 'Focal Web UI Developer at Globant',
     subtitle: 'Argentina',
     description: 'Working in OLX platform by leading the front end related tasks. Home page: www.olx.com',
-    date: 'January to August 2020',
+    date: 'January 2018 to February 2019',
   },
   {
     title: 'Web UI Developer at Globant',
     subtitle: 'Argentina',
     description: 'Working in OLX platform with mainly front end tasks. Home page: www.olx.com',
-    date: 'January to August 2020',
+    date: 'April 2017 to January 2018',
   },
   {
     title: 'Web UI Developer at Globant',
     subtitle: 'Dallas - United States',
     description: 'Working in components team by creating small reusable pieces of code that serve to the application. Home page: www.southwest.com',
-    date: 'January to August 2020',
+    date: 'October 2015 to April 2017',
   }
 ];
 export default function Experience() {
