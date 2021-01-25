@@ -5,7 +5,7 @@ import { FaReact } from 'react-icons/fa';
 const mockedData = [
   {
     title: 'Software Engineer at CMOList',
-    subtitle: 'Estados Unidos',
+    subtitle: 'United States',
     description: 'Working mainly in front-end related tasks.',
     date: '2021 - present'
   },
@@ -17,7 +17,7 @@ const mockedData = [
   },
   {
     title: 'Web UI Developer at Globant',
-    subtitle: 'Estados Unidos',
+    subtitle: 'United States',
     description: 'Working for InStride.com in front-end related tasks',
     date: 'January to August 2020'
   },
@@ -41,7 +41,7 @@ const mockedData = [
   },
   {
     title: 'Web UI Developer at Globant',
-    subtitle: 'Dallas - Estados Unidos',
+    subtitle: 'Dallas - United States',
     description: 'Working in components team by creating small reusable pieces of code that serve to the application. Home page: www.southwest.com',
     date: 'January to August 2020',
   }
@@ -67,7 +67,7 @@ export default function Experience() {
           </VerticalTimelineElement>
         )
       })}
-            
+
     </VerticalTimeline>
   );
 }

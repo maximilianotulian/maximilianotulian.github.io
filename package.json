@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://maximilianotulian.github.io",
   "dependencies": {
     "@rematch/core": "^2.0.0-next.10",
     "@testing-library/jest-dom": "^5.11.9",
@@ -22,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -d public -b master",
+    "deploy": "npm run build && gh-pages -d build",
     "format": "prettier --write src/**/*.{js,jsx}"
   },
   "eslintConfig": {
