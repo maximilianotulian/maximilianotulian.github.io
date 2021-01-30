@@ -2,13 +2,17 @@ import React from 'react';
 import Layout from '../../components/Layout/Layout.js';
 import Experience from '../Experience/Experience.js';
 import { AiFillGithub } from 'react-icons/ai';
-import { FaTwitterSquare, FaMedium } from 'react-icons/fa';
+import { FaTwitterSquare } from 'react-icons/fa';
+import ReactGA from 'react-ga';
+
 import './home.scss';
 
 const Separator = function() {
   return <div style={{borderTop: '1px solid #cccccc'}}/>
 }
 export default function Home(props) {
+  ReactGA.initialize('UA-142292796-1');
+  ReactGA.pageview('/home');
   return (
     <Layout>
       <div>
