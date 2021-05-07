@@ -19,9 +19,18 @@ export default function Experience() {
           >
             <h3 className="vertical-timeline-element-title">{title}</h3>
             <h4 className="vertical-timeline-element-subtitle">{subtitle}</h4>
-            <p>
-              {description}
-            </p>
+            {typeof description === 'string' ? (
+              <p>
+                {description}
+              </p>
+            ) : (
+              <ul>
+                {description.map(descriptionItem =>
+                  <li>{descriptionItem}</li>
+                )}
+              </ul>
+            )}
+
           </VerticalTimelineElement>
         )
       })}
