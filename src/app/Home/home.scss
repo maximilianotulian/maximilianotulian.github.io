@@ -1,8 +1,16 @@
 .home {
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   &__social {
+    margin-left: 20px;
+
     &-item {
       color: black;
       font-size: 30px;
+      margin-left: 10px;
     }
   }
 }

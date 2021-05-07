@@ -21,11 +21,11 @@ export default function Home(props) {
         <h2>
           Maximiliano Tulian - Frontend Software Engineer
         </h2>
+        <section className="home__social-item">
+          <a className="home__social-item" href="https://github.com/maximilianotulian" ><AiFillGithub /></a>
+          <a className="home__social-item" href="https://twitter.com/max_tulian"><FaTwitterSquare /></a>
+        </section>
       </div>
-      <section className="home__social-item">
-        <a className="home__social-item" href="https://github.com/maximilianotulian" ><AiFillGithub /></a>
-        <a className="home__social-item" href="https://twitter.com/max_tulian"><FaTwitterSquare /></a>
-      </section>
       <Separator />
       <section>
         <Experience />
