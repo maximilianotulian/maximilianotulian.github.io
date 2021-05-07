@@ -2,54 +2,12 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import { FaReact } from 'react-icons/fa';
 
-const mockedData = [
-  {
-    title: 'Software Engineer at CMOList',
-    subtitle: 'United States',
-    description: 'Working mainly in front-end related tasks.',
-    date: '2021 - present'
-  },
-  {
-    title: 'Software Engineer at Ergeon',
-    subtitle: 'San Francisco',
-    description: 'Working at the main page of Ergeon mainly in front end related task. Home page: www.ergeon.com.',
-    date: 'April to August 2020'
-  },
-  {
-    title: 'Web UI Developer at Globant',
-    subtitle: 'United States',
-    description: 'Working for InStride.com in front-end related tasks',
-    date: 'March to April 2020'
-  },
-  {
-    title: 'Web UI Developer at Globant',
-    subtitle: 'Argentina',
-    description: 'Learning and applying design patterns to build reusable components',
-    date: 'February to March 2020'
-  },
-  {
-    title: 'Focal Web UI Developer at Globant',
-    subtitle: 'Argentina',
-    description: 'Working in OLX platform by leading the front end related tasks. Home page: www.olx.com',
-    date: 'January 2018 to February 2019',
-  },
-  {
-    title: 'Web UI Developer at Globant',
-    subtitle: 'Argentina',
-    description: 'Working in OLX platform with mainly front end tasks. Home page: www.olx.com',
-    date: 'April 2017 to January 2018',
-  },
-  {
-    title: 'Web UI Developer at Globant',
-    subtitle: 'Dallas - United States',
-    description: 'Working in components team by creating small reusable pieces of code that serve to the application. Home page: www.southwest.com',
-    date: 'October 2015 to April 2017',
-  }
-];
+import workExperience from './data';
+
 export default function Experience() {
   return (
     <VerticalTimeline>
-      {mockedData.map(({title, subtitle, description, date}, index) => {
+      {workExperience.map(({title, subtitle, description, date}, index) => {
         return (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
