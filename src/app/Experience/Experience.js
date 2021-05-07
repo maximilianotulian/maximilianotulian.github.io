@@ -3,6 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import { FaReact } from 'react-icons/fa';
 
 import workExperience from './data';
+import './experience.scss';
 
 export default function Experience() {
   return (
@@ -11,20 +12,19 @@ export default function Experience() {
         return (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={index === 0 ? { background: 'rgb(33, 150, 243)', color: '#fff' } : {}}
-            contentArrowStyle={index === 0 ? { borderRight: '7px solid  rgb(33, 150, 243)' } : {}}
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            contentStyle={{ borderTop: '4px solid #61dafb'}}
+            iconStyle={{ background: '#61dafb', color: '#fff' }}
             date={date}
             icon={<FaReact />}
           >
             <h3 className="vertical-timeline-element-title">{title}</h3>
             <h4 className="vertical-timeline-element-subtitle">{subtitle}</h4>
             {typeof description === 'string' ? (
-              <p>
+              <p className="experience--paragraph">
                 {description}
               </p>
             ) : (
-              <ul>
+              <ul className="experience--list">
                 {description.map(descriptionItem =>
                   <li>{descriptionItem}</li>
                 )}
