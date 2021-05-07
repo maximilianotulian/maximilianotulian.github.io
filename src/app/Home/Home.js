@@ -10,19 +10,21 @@ import './home.scss';
 const Separator = function() {
   return <div style={{borderTop: '1px solid #cccccc'}}/>
 }
+
 export default function Home(props) {
   ReactGA.initialize('UA-142292796-1');
   ReactGA.pageview('/home');
+
   return (
-    <Layout>
-      <div>
+    <Layout className="home">
+      <div className="home__title">
         <h2>
-          Maximiliano Tulian - Software Engineer
+          Maximiliano Tulian - Frontend Software Engineer
         </h2>
       </div>
-      <section>
-        <a href="https://github.com/maximilianotulian" style={{fontSize: '30px '}}><AiFillGithub /></a>
-        <a href="https://twitter.com/max_tulian" style={{fontSize: '30px '}}><FaTwitterSquare /></a>
+      <section className="home__social-item">
+        <a className="home__social-item" href="https://github.com/maximilianotulian" ><AiFillGithub /></a>
+        <a className="home__social-item" href="https://twitter.com/max_tulian"><FaTwitterSquare /></a>
       </section>
       <Separator />
       <section>
