@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 
-export default function Layout({children, className, title = 'Maximiliano`s resume'}) {
+export default function Layout({children, className, title = `Maximiliano's resume`}) {
   useEffect(() => {
     document.title = title;
   }, [title]);
