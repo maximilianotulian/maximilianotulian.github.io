@@ -25,26 +25,28 @@ export default function Experience() {
             ) : (
               <ul className="experience__list">
                 {description.map(descriptionItem =>
-                  <li>{descriptionItem}</li>
+                  <li className="experience__list-item">{descriptionItem}</li>
                 )}
               </ul>
             )}
-            <div>
-              <div className="experience__technologies-title">
-                <strong>Technologies</strong>
-              </div>
-              <div className="experience__technologies-wrapper">
-                {technologies.length > 0 && (
-                  <>
-                  {technologies.map((technology) =>
-                    <div className="experience__tecnologies-item">
-                      {technology}
-                    </div>
+            {technologies.length > 0 && (
+              <div>
+                <div className="experience__technologies-title">
+                  <strong>Technologies</strong>
+                </div>
+                <div className="experience__technologies-wrapper">
+                  {technologies.length > 0 && (
+                    <>
+                    {technologies.map((technology) =>
+                      <div className="experience__tecnologies-item">
+                        {technology}
+                      </div>
+                    )}
+                    </>
                   )}
-                  </>
-                )}
+                </div>
               </div>
-            </div>
+           )}
           </VerticalTimelineElement>
         )
       })}

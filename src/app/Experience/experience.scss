@@ -1,6 +1,9 @@
 .experience {
   &__list {
     padding-left: 20px;
+    &-item {
+      line-height: 25px;
+    }
   }
   &__technologies-title {
     margin-top: 10px;

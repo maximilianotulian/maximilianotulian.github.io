@@ -3,7 +3,7 @@ const experience = [
     agile: ['Scrum'],
     date: 'May 2021 to present',
     description: [],
-    technologies: ['React', 'Redux', 'Bootstrap', 'Sass', 'BEM'],
+    technologies: [],
     title: 'Senior Frontend Developer at Grupo Giga',
   },
   {
