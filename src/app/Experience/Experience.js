@@ -8,7 +8,7 @@ import './experience.scss';
 export default function Experience() {
   return (
     <VerticalTimeline>
-      {workExperience.map(({title, subtitle, description, date}, index) => {
+      {workExperience.map(({title, description, date}, index) => {
         return (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -18,7 +18,6 @@ export default function Experience() {
             icon={<FaReact />}
           >
             <h3 className="vertical-timeline-element-title">{title}</h3>
-            <h4 className="vertical-timeline-element-subtitle">{subtitle}</h4>
             {typeof description === 'string' ? (
               <p className="experience--paragraph">
                 {description}
