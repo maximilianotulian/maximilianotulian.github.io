@@ -23,7 +23,7 @@ export default function Experience() {
                 {description}
               </p>
             ) : (
-              <ul className="experience--list">
+              <ul className="experience__list">
                 {description.map(descriptionItem =>
                   <li>{descriptionItem}</li>
                 )}
