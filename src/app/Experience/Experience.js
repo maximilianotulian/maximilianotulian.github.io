@@ -8,7 +8,7 @@ import './experience.scss';
 export default function Experience() {
   return (
     <VerticalTimeline>
-      {workExperience.map(({title, description, date}, index) => {
+      {workExperience.map(({title, description, date, technologies}, index) => {
         return (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -29,7 +29,22 @@ export default function Experience() {
                 )}
               </ul>
             )}
-
+            <div>
+              <div className="experience__technologies-title">
+                <strong>Technologies</strong>
+              </div>
+              <div className="experience__technologies-wrapper">
+                {technologies.length > 0 && (
+                  <>
+                  {technologies.map((technology) =>
+                    <div className="experience__tecnologies-item">
+                      {technology}
+                    </div>
+                  )}
+                  </>
+                )}
+              </div>
+            </div>
           </VerticalTimelineElement>
         )
       })}
