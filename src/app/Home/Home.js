@@ -2,7 +2,7 @@ import React from 'react';
 import Experience from '../Experience/Experience';
 import Layout from '../../components/Layout/index';
 import Separator from '../../components/Separator';
-import { AiFillGithub } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { FaTwitterSquare } from 'react-icons/fa';
 import ReactGA from 'react-ga';
 
@@ -21,6 +21,7 @@ export default function Home() {
         <section className="home__social-item">
           <a className="home__social-item" href="https://github.com/maximilianotulian" ><AiFillGithub /></a>
           <a className="home__social-item" href="https://twitter.com/max_tulian"><FaTwitterSquare /></a>
+          <a className="home__social-item" href="https://linkedin.com/in/maximilianotulian"><AiFillLinkedin /></a>
         </section>
       </div>
       <Separator />
