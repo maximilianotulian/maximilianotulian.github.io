@@ -1,13 +1,13 @@
 import './App.scss';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  Link
+  Switch,
 } from "react-router-dom";
 import Home from './app/Home/Home.js';
+import React from 'react';
 
-export default function App() {
+const App = () => {
   return (
     <Router>
       <Switch>
@@ -16,5 +16,7 @@ export default function App() {
         </Route>
       </Switch>
     </Router>
-  );
+  )
 }
+
+export default App;

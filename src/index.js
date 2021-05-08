@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import 'react-vertical-timeline-component/style.min.css';
-import App from './App';
+import App from './App.js';
 import reportWebVitals from './reportWebVitals';
 import { init } from '@rematch/core';
 import { Provider } from 'react-redux';
