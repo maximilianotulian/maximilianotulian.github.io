@@ -2,8 +2,8 @@ import React, {useEffect, ReactNode} from 'react';
 
 interface IProps {
   children: ReactNode;
-  className: string;
-  title: string;
+  className?: string;
+  title?: string;
 };
 
 export default function Layout({

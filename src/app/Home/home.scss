@@ -8,9 +8,28 @@
     margin-left: 20px;
 
     &-item {
+      background: transparent;
+      border: 0;
       color: black;
+      cursor: pointer;
       font-size: 30px;
-      margin-left: 10px;
+      margin: 0 0 0 10px;
+      padding: 0;
+    }
+  }
+  &--dark {
+    .home__social-item {
+      color: white;
+    }
+    .vertical-timeline-element-content {
+      border-top: 4px solid black !important;
+      background-color: grey;
+    }
+    .vertical-timeline-element-icon {
+      background: black !important;
+    }
+    .experience__tecnologies-item {
+      background: black;
     }
   }
 }
