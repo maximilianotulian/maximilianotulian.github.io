@@ -13,6 +13,7 @@ enum Technology {
   NPM = 'NPM',
   REACT = 'React',
   REDUX = 'Redux',
+  REDUX_THUNK = 'Redux Thunk',
   SASS = 'SASS',
   STORYBOOK = 'Storybook',
   THREEJS = 'ThreeJS',
@@ -26,10 +27,14 @@ const experience = [
   {
     agile: [Agile.SCRUM],
     date: 'April 2022 to present',
-    description: [],
+    description: [
+      'Working for Nerdery a digital product consultancy',
+      'Building a React JS application from scratch for desktop and mobile with focus in a11y and performance.'
+    ],
     technologies: [
       Technology.REACT,
       Technology.REDUX,
+      Technology.REDUX_THUNK,
       Technology.BEM,
       Technology.SASS
     ],
@@ -40,7 +45,7 @@ const experience = [
     date: 'November 2021 to April 2022',
     description: [
       'Working for Kilburn Live a global market leader in branded live entertainment.',
-      'Mainly focusing in leading a team to construct a couple of Vue applications.',
+      'Mainly focused in leading a team to construct a couple of Vue applications.',
       'Training Junior and Semi Senior developers as well as updating available trainings.',
       'Performing interviews and helping in the update of the interview process.',
     ],
