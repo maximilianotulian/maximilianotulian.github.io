@@ -5,10 +5,10 @@ import workExperience from './data';
 import './experience.scss';
 
 interface IWorkItem {
-  title: string;
-  description: string[] | string;
   date: string;
+  description: string[] | string;
   technologies: string[];
+  title: string;
 }
 
 export default function Experience() {
@@ -46,7 +46,7 @@ export default function Experience() {
               {technologies.length > 0 && (
               <>
                 {technologies.map((technology: string, index) => (
-                  <div className="experience__tecnologies-item" key={index}>
+                  <div className="experience__technologies-item" key={index}>
                     {technology}
                   </div>
                 ))}
