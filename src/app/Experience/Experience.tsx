@@ -32,8 +32,8 @@ export default function Experience() {
             </p>
           ) : (
             <ul className="experience__list">
-              {description.map((descriptionItem: string, index) => (
-                <li key={index} className="experience__list-item">{descriptionItem}</li>)
+              {description.map((descriptionItem: string, i) => (
+                <li key={i} className="experience__list-item">{descriptionItem}</li>),
               )}
             </ul>
           )}
@@ -45,8 +45,8 @@ export default function Experience() {
             <div className="experience__technologies-wrapper">
               {technologies.length > 0 && (
               <>
-                {technologies.map((technology: string, index) => (
-                  <div className="experience__technologies-item" key={index}>
+                {technologies.map((technology: string, i) => (
+                  <div className="experience__technologies-item" key={i}>
                     {technology}
                   </div>
                 ))}
